@@ -1,0 +1,18 @@
+@media only screen and (min-width: 64rem) {
+    header {
+        gap: 3rem;
+    }
+    .profile-pic {
+        width: 15%;
+        max-width: 25%;
+    }
+}
+
+main{
+    display: grid;
+    grid-template-columns:2fr 1fr ;
+}
+
+main h2{
+    grid-column: 1 /  2;
+}
