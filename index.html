@@ -16,10 +16,8 @@
             <img class="logo" src="images/Ashley.jpg" alt="Awesome Rafting Logo">
         </a>
         <h1>Ashley Kamujoma</h1>
-        <div id="darkBtn">
-            ☑️
-        
-        </div>
+        <img src= "images/moon.png" id="icon">
+
     </header>
     <nav>
         <ul>
@@ -63,5 +61,18 @@
         <p>&copy; 2023 - Ashlely Kamujoma - Zimbambwe</p>
         <p> - Last Modified: 9/14/2023</p>
     </footer>
+
+    <script>
+        var icon =document.getElementById("icon")
+
+        icon.onclick =function(){
+            document.body.classList.toggle("dark-theme");
+            if (document.body.classList.contains("dark-theme")){
+                icon.src = "images/sun.png";
+            }else{
+                icon.src ="images/moon.png";
+            }
+        }
+    </script>
 </body>
 </html>

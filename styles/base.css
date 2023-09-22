@@ -27,7 +27,12 @@ main {
 	margin: 0 auto;
 }
 
-#darkBtn{
+.dark-theme{
+	--primary-color: #000106;
+	--secondary-color: #fff;
+}
+
+#icon{
 	position: absolute;
 	top:1rem; right:1rem;
 	width:24px;

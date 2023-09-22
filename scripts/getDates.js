@@ -16,6 +16,6 @@ lastModified.textContent = ` Last Modified: ${new Date(document.lastModified).to
 currentYear.textContent = `${new Date().toLocaleDateString("en-US", currentYearOptions)}`
 
 
-const myBtn = document.querySelector('#darkBtn');
+const myBtn = document.querySelector('icon');
 
-myBtn.addEventListener('click',()=>{mainTag.classList.toggle('dark')});
+myBtn.addEventListener('click',()=>{mainTag.classList.toggle('dark-theme')});
