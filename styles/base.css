@@ -97,17 +97,9 @@ h3{
 
 
 .card2{
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    grid-column: auto;
-    padding: 1rem;
-	border: #E5F2C9;
-    box-shadow: 5px 5px 10px #6f7364;
-	margin-bottom: 20px;
-	margin-top: 30px;
-	font-size: 1rem;
-	background-color: #E5F2C9;
+	
+	
+	
 	
 }
 
