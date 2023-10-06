@@ -1,0 +1,19 @@
+:root {
+    --main-color: #ff0000;
+    --secondary-color: #7d2ae8;
+    --tertiary-color: #0000ff;
+  }
+  
+  button{
+    color: #fff;
+    padding: 8px 22px;
+    border-radius: 6px;
+    background: #7d2ae8;
+    transition: all 0.2s ease;
+  }
+
+  button:active {
+    transform: scale(0.96);
+  }
+
+ 
