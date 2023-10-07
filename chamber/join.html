@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Join Page of the website Funes Chamber of Commerce. Here you will find the form for joining the chamber">
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/small.css">
+    <link rel="stylesheet" href="styles/medium.css">
+    <link rel="stylesheet" href="styles/large.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&family=Signika+Negative&display=swap" rel="stylesheet">
+    <link rel="icon" href="favicon.ico">
+    <title>[Join] The  Chamber of Commerce</title>
+</head>
+<body>
+    <header>
+        <div class="header-logo"><a href="./"><img src="images/logo.webp" alt="Funes Chamber of Commerce Logo"></a></div>
+        <h1 class="header-h1">The Chamber of Commerce</h1>
+        <div class="header-social-media">
+            <a class="facebook-logo" href="https://www.facebook.com" target="_blank"><img src="images/facebook-logo.webp" alt="Facebook Logo"></a>
+            <a class="instagram-logo" href="https://www.instagram.com" target="_blank"><img  src="images/instagram-logo.webp" alt="instagram Logo"></a>
+        </div>
+        <p id="todaysDate"></p>
+        <nav>
+            <button id="hamburgerBtn"><span>&#9776;</span><span>X</span></button>
+            <ul id="primaryNav">
+                <li><a href="./">Home</a></li>
+                <li><a href="discover.html">Discover</a></li>
+                <li><a href="directory.html">Directory</a></li>
+                <li class="active"><a href="join.html">Join</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main class="join-main">
+        <div id="join-meeting-banner">
+            <h2>🤝🏼 Come join us for the chamber meet and greet Wednesday at 7:00 p.m</h2>
+        </div>
+        <div class="lastVisit">
+            <p class="lastVisitP"></p>
+        </div>
+        <h2>Join  Chamber of Commerce</h2>
+        <form method="get" action="thankyou.html">
+            <fieldset>
+                <legend>Personal Information</legend>
+                <label class="top">First Name*<input type="text" name="fname" required></label>
+                <label class="top">Last Name*<input type="text" name="lname" required></label>
+                <label class="top">Email*<input type="email" name="email" placeholder="someone@example.com" required></label>
+                <label class="top">Phone Number*<input type="tel" name="phone" required></label>
+            </fieldset>
+
+            <fieldset>
+                <legend>Membership and your business</legend>
+                <div class="membership">
+                    <h3>Select a Membership level</h3>
+                    <p>Click one to see info...</p> 
+                    <label class="sbs"><input type="radio" name="membership" value="np" onclick="showMembershipInfo('np')"> NP Membership</label>
+                    <label class="sbs"><input type="radio" name="membership" value="bronze" onclick="showMembershipInfo('bronze')"> Bronze Membership</label>
+                    <label class="sbs"><input type="radio" name="membership" value="silver" onclick="showMembershipInfo('silver')"> Silver Membership</label>
+                    <label class="sbs"><input type="radio" name="membership" value="gold" onclick="showMembershipInfo('gold')"> Gold Membership</label>
+                </div>
+                <div class="membership-info">
+                </div>
+                <label class="top">Business Name*<input type="text" name="bussname" required></label>
+                <label class="top">Business Position<input type="text" name="position" pattern="[a-zA-Z\s\-]{7,}"></label>
+                <label class="top">Briefly describe your business<textarea name="description" cols="30" rows="7"></textarea></label>
+                <input type="hidden" id="hiddenDate" name="hiddenDate">
+            </fieldset>
+            <input type="submit" value="Join the Chamber" class="submitBtn" onclick="getHiddenDate()" name="submitButton">
+        </form>
+    </main>
+    <footer>
+        <div class="footer-section1">
+            <div class="home-footer-logo">
+                <img src="images/logo.webp" alt="Logo of The Chamber of Commerce">
+            </div>
+            <section class="address-section">
+                <h3 class="footer-title">The Chamber of Commerce</h3>
+                <p class="footer-address">Mpopoma 20300, Bulawayo,Zimbambwe</p>
+            </section>
+        </div>
+        <div class="footer-section2">
+            <p class="footer-email">chamberofcommerce@gmail.com</p>
+            <p class="footer-phone-number">+(263) 7234 567885</p>
+            <a class="footer-location" href="https://www.google.com/maps/place/ESTUDIO+91/@-32.9194306,-60.8146983,20z/data=!4m15!1m8!3m7!1s0x95b64dac38aea5e7:0xe7709bb9296042f8!2sFunes,+Santa+Fe!3b1!8m2!3d-32.9215358!4d-60.8109887!16zL20vMDd6Y3Bo!3m5!1s0x95b64c53333b8c1d:0x139624a0f0e0fc4c!8m2!3d-32.919491!4d-60.814488!16s%2Fg%2F11b6_mf2vw" target="_blank">📍 Location Map</a>
+        </div>
+        <div class="footer-section3">
+            <p class="copyright">&copy; <span id="currentyear"></span> Chamber </p>
+            <p class="footer-name"><span class="footer-separator"> | </span> Ashley Kamujoma <span class="footer-separator"> | </span></p>
+            <p class="footer-wdd230">WDD 230 Project <span class="footer-separator"> | </span></p>
+            <p class="lastmodified"></p>
+        </div>
+        <div class="footer-section4">
+            <p class="lastmodified2"></p>
+        </div>
+    </footer>
+    <script src="scripts/main.js"></script>
+    <script src="scripts/join.js"></script>
+</body>
+</html>
