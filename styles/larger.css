@@ -8,10 +8,11 @@
     }
 }
 
-main{
+div.allcards {
     display: grid;
-    grid-template-columns:2fr 1fr ;
-}
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
+  }
 
 .card:first-child {
     grid-row: 1 / span 2;

@@ -1,3 +1,12 @@
+
+:root {
+	--baseColor: #111;
+	--accent-color: #3F6AEB;
+	--box-space: .5rem 16px;
+  }
+
+
+
 * {
 	margin: 0;
 	padding: 0;
@@ -79,9 +88,6 @@ main h2 {
 
 
 .card{
-	display: grid;
-	grid-template-columns: 2fr 1fr;
-	column-gap: 16px;
 	border-radius: 11px;
 	border: solid 1px #ccc;
 	margin-bottom: 1rem;
